@@ -1,0 +1,26 @@
+/* Global Styles */
+body {
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    background-color: #313e4d;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  hr.solid {
+    border-top: 1px solid #ffffff;
+  }

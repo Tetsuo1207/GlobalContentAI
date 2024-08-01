@@ -1,0 +1,94 @@
+#seo {
+    width: 90px;
+    height: 90px;
+    display: block; /* Ensure it's a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+#services {
+    text-align: center; /* Center the heading */
+    padding-bottom: 60px;
+}
+
+#services h2 {
+    margin-bottom: 20px; /* Space between the heading and the containers */
+    font-size: 2em;
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+#services .container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the containers in the row */
+    gap: 30px; /* Add some space between the containers */
+}
+
+#services .container {
+    width: 250px;
+    height: 400px;
+    border-radius: 25px;
+    padding: 25px 15px; /* Optional: Add some padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: start; /* Align items at the start */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+    background-color: #5388C6; /* Default background color for the first container */
+}
+
+#services .container:nth-of-type(2) {
+    background-color: #4daab3; /* Different background color for the second container */
+}
+
+#services .container:nth-of-type(3) {
+    background-color: #eabc54; /* Different background color for the third container */
+}
+
+#services .container:nth-of-type(4) {
+    background-color: #e15f73; /* Different background color for the fourth container */
+}
+
+#services .container img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px; /* Space between image and heading */
+}
+
+#services .container h3 {
+    margin: 10px 0; /* Space around the heading */
+    font-size: 20px; /* Adjust font size as needed */
+    color: white;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 24px;
+    font-family: 'Inter';
+    font-weight: 700;
+}
+
+#services .container p {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text */
+    font-weight: 100;
+    padding: 0 22px;
+}
+
+#services button {
+    margin-top: 30px;
+    background-color: #EE8162;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+#services button:hover {
+    background-color: #fc5d30; /* Hover effect for home button */
+    border-color: #fc5d30;
+
+}

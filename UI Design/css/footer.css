@@ -1,0 +1,46 @@
+/* Footer Styles */
+footer {
+    background-color: #2C3E50; /* Dark background for contrast */
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .social-media {
+    margin: 20px 0;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .social-media img {
+    width: 30px; /* Slightly larger icons */
+    height: 30px;
+    object-fit: cover; /* Ensures the images cover the area without distortion */
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .social-media a:hover img {
+    opacity: 0.8; /* Slightly transparent on hover */
+    transform: scale(1.1); /* Slightly larger on hover */
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

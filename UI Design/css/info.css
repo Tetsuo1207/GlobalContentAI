@@ -1,0 +1,49 @@
+#info {
+    position: relative; /* Establish a positioning context for absolute positioning */
+    padding: 40px; /* Optional padding for spacing */
+    overflow: hidden; /* Hide any overflow */
+}
+
+#corner-left {
+    height: 400px;
+    width: 400px;
+    position: absolute; /* Use absolute positioning */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    z-index: -1; /* Place it behind other elements */
+    pointer-events: none; /* Prevent interaction with this element */
+}
+
+#corner-right {
+    height: 400px; /* Set the height */
+    width: 400px; /* Set the width */
+    position: absolute; /* Use absolute positioning */
+    bottom: 0; /* Align to the bottom */
+    right: 0; /* Align to the right */
+    z-index: -1; /* Place it behind other elements */
+    pointer-events: none; /* Prevent interaction with this element */
+}
+
+.orange {
+    color: #ee8162;
+}
+
+#info h2 {
+    text-align: center;
+    padding: 30px 0; /* Adjust padding */
+    color: #ffffff;
+}
+
+#main {
+    width: 810px;
+    height: 326px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+#info p {
+    padding: 40px 0;
+}

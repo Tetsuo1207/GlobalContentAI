@@ -1,0 +1,138 @@
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #313E4D;
+  color: #fff;
+  height: 100px;
+  padding-right: 20px;
+  position: relative; /* Ensure the header is positioned relative for dropdown positioning */
+}
+
+header .logo img {
+  height: 100px;
+  width: 100px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+#home-button a,
+#contact-us-button a {
+  color: #fff;
+  padding: 15px 20px;
+  border: 2px solid;
+  border-radius: 25px;
+  background-color: transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+#apply-now-button a {
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: #EE8162;
+  transition: background-color 0.3s;
+}
+
+#home-button a:hover,
+#contact-us-button a:hover {
+  background-color: #272727; /* Hover effect */
+  border-color: #272727;
+}
+
+#apply-now-button a:hover {
+  background-color: #FC5D30; /* Hover effect for apply button */
+}
+
+/* Burger Menu Icon */
+.burger-menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #fff; /* Burger icon color */
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+  header nav ul {
+    display: none; /* Hide nav links on small devices */
+    flex-direction: column;
+    background-color: #313E4D; /* Match the header background */
+    position: absolute;
+    top: 100px; /* Adjust based on header height */
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000; /* Ensure dropdown is above other content */
+  }
+
+  header nav ul.show {
+    display: flex; /* Show nav links when dropdown is active */
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .burger-menu {
+    display: block; /* Show burger menu icon on small devices */
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Remove button styles when dropdown is visible */
+  header nav ul li a {
+    background-color: transparent; /* No background for dropdown items */
+    border: none; /* No border for dropdown items */
+  }
+}
+
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+  header nav ul {
+    display: none; /* Hide nav links on small devices */
+    flex-direction: column;
+    background-color: #313E4D; /* Background color for dropdown */
+    position: absolute;
+    top: 100px; /* Below the header */
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .burger-menu {
+    display: block; /* Show burger menu icon on small devices */
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+}
